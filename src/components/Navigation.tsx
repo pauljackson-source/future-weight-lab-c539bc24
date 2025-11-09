@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,9 +37,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <NavLink to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-neon flex items-center justify-center">
-              <span className="text-2xl font-display font-bold text-background">J</span>
-            </div>
+            <img src={logo} alt="Jackson Scale Logo" className="w-10 h-10 object-contain" />
             <span className="text-xl font-display font-bold text-gradient">
               Jackson Scale
             </span>

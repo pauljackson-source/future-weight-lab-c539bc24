@@ -114,11 +114,15 @@ const Contact = () => {
             {/* Contact Cards */}
             <div className="space-y-4">
               {[
-                { icon: Phone, title: "Phone", content: "+91 9688106228 / +91 7558158732" },
-                { icon: Mail, title: "Email", content: "jacksonscalesservice@gmail.com" },
-                { icon: MapPin, title: "Address", content: "Chengalpattu-603002, TamilNadu" }
+                { icon: Phone, title: "Phone", content: "+91 9688106228 / +91 7558158732", href: "tel:+919688106228" },
+                { icon: Mail, title: "Email", content: "jacksonscalesservice@gmail.com", href: "mailto:jacksonscalesservice@gmail.com" },
+                { icon: MapPin, title: "Address", content: "Chengalpattu-603002, TamilNadu", href: null }
               ].map((item, index) => (
-                <div key={index} className="glass-card p-6 rounded-2xl hover:glow-cyan transition-all">
+                <a 
+                  key={index} 
+                  href={item.href || undefined}
+                  className={`glass-card p-6 rounded-2xl hover:glow-cyan transition-all ${item.href ? 'cursor-pointer' : ''}`}
+                >
                   <div className="flex items-center gap-4">
                     <div className="bg-gradient-neon/10 w-12 h-12 rounded-xl flex items-center justify-center">
                       <item.icon className="w-6 h-6 text-primary" />
@@ -128,7 +132,7 @@ const Contact = () => {
                       <div className="font-medium">{item.content}</div>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
 
@@ -142,14 +146,19 @@ const Contact = () => {
             </div>
 
             {/* WhatsApp CTA */}
-            <div className="glass-card p-6 rounded-2xl text-center glow-purple">
+            <a 
+              href="https://wa.me/919688106228" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="glass-card p-6 rounded-2xl text-center glow-purple hover:glow-cyan transition-all block"
+            >
               <MessageSquare className="w-10 h-10 text-primary mx-auto mb-3" />
               <h3 className="font-display font-semibold mb-2">Need Instant Support?</h3>
               <p className="text-sm text-muted-foreground mb-4">Chat with us on WhatsApp</p>
               <Button variant="outline" className="glass-card border-primary/50">
                 Open WhatsApp Chat
               </Button>
-            </div>
+            </a>
           </div>
         </div>
       </div>

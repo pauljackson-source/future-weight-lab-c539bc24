@@ -55,22 +55,22 @@ const Warranty = () => {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="glass-card p-4 rounded-xl">
+              <a href="tel:+919688106228" className="glass-card p-4 rounded-xl hover:glow-cyan transition-all">
                 <div className="flex items-center gap-3 mb-2">
                   <Phone className="w-5 h-5 text-primary" />
                   <h4 className="font-semibold">Phone</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">+91 9688106228</p>
                 <p className="text-sm text-muted-foreground">+91 7558158732</p>
-              </div>
+              </a>
 
-              <div className="glass-card p-4 rounded-xl">
+              <a href="mailto:jacksonscalesservice@gmail.com" className="glass-card p-4 rounded-xl hover:glow-cyan transition-all">
                 <div className="flex items-center gap-3 mb-2">
                   <Mail className="w-5 h-5 text-primary" />
                   <h4 className="font-semibold">Email</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">jacksonscalesservice@gmail.com</p>
-              </div>
+              </a>
 
               <div className="glass-card p-4 rounded-xl md:col-span-2">
                 <div className="flex items-center gap-3 mb-2">

@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-neon flex items-center justify-center">
-                <span className="text-lg font-display font-bold text-background">J</span>
-              </div>
+              <img src={logo} alt="Jackson Scale Logo" className="w-8 h-8 object-contain" />
               <span className="text-lg font-display font-bold text-gradient">
                 Jackson Scale
               </span>
@@ -44,18 +43,18 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-semibold mb-4">Contact</h3>
             <div className="space-y-2">
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              <a href="tel:+919688106228" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4" />
                 <span>+91 9688106228</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              </a>
+              <a href="tel:+917558158732" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Phone className="w-4 h-4" />
                 <span>+91 7558158732</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+              </a>
+              <a href="mailto:jacksonscalesservice@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
                 <Mail className="w-4 h-4" />
                 <span>jacksonscalesservice@gmail.com</span>
-              </div>
+              </a>
               <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4" />
                 <span>Chengalpattu-603002, TamilNadu</span>
