@@ -19,50 +19,44 @@ const Products = () => {
     {
       category: "bench",
       icon: Scale,
-      name: "Precision Bench Scale X1",
-      capacity: "5kg - 0.01g",
-      description: "High-precision bench scale with AI calibration",
-      price: "$1,299"
+      name: "Precision Bench Scale 50kg",
+      capacity: "50kg",
+      description: "High-precision bench scale with 5g accuracy"
     },
     {
       category: "industrial",
       icon: Factory,
       name: "Industrial Platform I500",
       capacity: "500kg - 0.1kg",
-      description: "Heavy-duty platform scale for industrial use",
-      price: "$4,599"
+      description: "Heavy-duty platform scale for industrial use"
     },
     {
       category: "portable",
       icon: Package,
       name: "Portable Digital P200",
       capacity: "200g - 0.001g",
-      description: "Ultra-portable scale with rechargeable battery",
-      price: "$599"
+      description: "Ultra-portable scale with rechargeable battery"
     },
     {
       category: "specialty",
       icon: Truck,
       name: "Truck Scale T2000",
       capacity: "2000kg - 1kg",
-      description: "Heavy vehicle weighing system with automation",
-      price: "$12,999"
+      description: "Heavy vehicle weighing system with automation"
     },
     {
       category: "bench",
       icon: Scale,
       name: "Analytical Balance A100",
       capacity: "100g - 0.0001g",
-      description: "Laboratory-grade analytical balance",
-      price: "$2,899"
+      description: "Laboratory-grade analytical balance"
     },
     {
       category: "industrial",
       icon: Factory,
       name: "Floor Scale F1000",
       capacity: "1000kg - 0.5kg",
-      description: "Low-profile floor scale for warehouse use",
-      price: "$3,299"
+      description: "Low-profile floor scale for warehouse use"
     },
   ];
 
@@ -117,8 +111,7 @@ const Products = () => {
               <div className="text-primary font-mono text-sm mb-3">{product.capacity}</div>
               <p className="text-muted-foreground mb-4">{product.description}</p>
               
-              <div className="flex items-center justify-between pt-4 border-t border-border">
-                <span className="text-2xl font-display font-bold text-gradient">{product.price}</span>
+              <div className="flex justify-end pt-4 border-t border-border">
                 <Button size="sm" variant="outline" className="glass-card border-primary/50">
                   Learn More
                 </Button>

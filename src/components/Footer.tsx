@@ -46,15 +46,19 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9688106228</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground text-sm">
+                <Phone className="w-4 h-4" />
+                <span>+91 7558158732</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Mail className="w-4 h-4" />
-                <span>info@jacksonscale.com</span>
+                <span>jacksonscalesservice@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <MapPin className="w-4 h-4" />
-                <span>Industrial District, Tech City</span>
+                <span>Chengalpattu-603002, TamilNadu</span>
               </div>
             </div>
           </div>
@@ -63,15 +67,15 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-semibold mb-4">Support</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+              <NavLink to="/contact" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Documentation
-              </a>
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+              </NavLink>
+              <NavLink to="/contact" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Technical Support
-              </a>
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
+              </NavLink>
+              <NavLink to="/warranty" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
                 Warranty Info
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

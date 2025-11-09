@@ -11,6 +11,7 @@ import Products from "./pages/Products";
 import Automation from "./pages/Automation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Warranty from "./pages/Warranty";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/automation" element={<Automation />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/warranty" element={<Warranty />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

@@ -114,9 +114,9 @@ const Contact = () => {
             {/* Contact Cards */}
             <div className="space-y-4">
               {[
-                { icon: Phone, title: "Phone", content: "+1 (555) 123-4567" },
-                { icon: Mail, title: "Email", content: "info@jacksonscale.com" },
-                { icon: MapPin, title: "Address", content: "123 Industrial Blvd, Tech City, TC 12345" }
+                { icon: Phone, title: "Phone", content: "+91 9688106228 / +91 7558158732" },
+                { icon: Mail, title: "Email", content: "jacksonscalesservice@gmail.com" },
+                { icon: MapPin, title: "Address", content: "Chengalpattu-603002, TamilNadu" }
               ].map((item, index) => (
                 <div key={index} className="glass-card p-6 rounded-2xl hover:glow-cyan transition-all">
                   <div className="flex items-center gap-4">

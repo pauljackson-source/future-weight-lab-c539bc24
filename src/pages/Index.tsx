@@ -26,8 +26,7 @@ const Index = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-2xl">
-                The Future of Weighing. Advanced industrial scales with AI-powered automation, 
-                delivering unmatched accuracy for modern industry.
+                The Future of Weighing. Advanced industrial scales delivering unmatched accuracy for modern industry.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
