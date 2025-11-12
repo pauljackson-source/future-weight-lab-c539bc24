@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/future-weight-lab">
+      <BrowserRouter>
         <div className="min-h-screen w-full">
           <Navigation />
           <Routes>
